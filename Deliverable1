@@ -1,0 +1,202 @@
+Capiral, Gilmore
+Hadji Abdulmadid, Rahmah
+Mila, Vercillius Jr
+Podiotan, Sunshine
+
+Topic : Point of Sale System (POSS)
+
+1. Vision:
+To increase the efficiency and output of a department store business by replacing a
+traditional cash register with a modern web-based Point-of-Sale System.
+
+2. Mission:
+The mission of this project is to provide a user-friendly Point-of-Sale system that keeps
+track of the items sold and the total sales of every transaction in a department store. The
+system should also be able to provide a detailed sales report and a transaction history.
+
+3. Objectives:
+● Within last week of January, the system should contain a working Authentication
+Module .
+● Within 2nd week of February, the system should consist of an Administration Module
+which helps administrator manage the users of the system.
+● Within 1st week of March, the system should consist of Transaction Module which
+allows the clerk to enter the items sold and calculate the total sales of every transaction.
+● Within 2nd week of March, the system should consist of Report Module which allows
+the auditor to view the sales report and the transaction history.
+
+4. Feature List
+● User Log in
+● User Logout
+● Add Personnel
+● Remove Personnel
+● View Transaction
+● View Report
+● Validate Report
+● Send Transaction Report
+● Add Transaction Item
+● Validate Transaction
+● Send Transaction Report
+● Void Transaction
+
+5. Feature Acceptance Criteria
+● User Log in
+➢ User can have an access to the system.
+● User Logout
+➢ User logs out to the system.
+● Add Personnel
+➢ Personnel ‘s(auditor and clerk) data is displayed and is recorded to the
+system.
+● Remove Personnel
+➢ Personnel information is deleted from the system.
+● View Transaction
+➢ Information about the transaction being made is displayed by the
+system.
+● View Report
+➢ Transaction’s details are displayed to the admin.
+● Add Transaction Item
+➢ Payment of item/s is recorded to the system.
+● Validate Transaction
+➢ Auditor is notified on all transactions made by the clerk and verify if the
+transaction is valid or not.
+● Send Transaction Report
+➢ Admin receives a summary of report of all transactions being made by
+that day.
+● Void Transaction
+➢ Transaction is deleted in the system.
+
+6. Use Cases
+
+    6.1. Name: User Log in
+    Description: User logs in to the system.
+    Actor: Admin, Auditor, Clerk
+    Pre-condition: User has an account.
+    Post-condition: User is redirected to the homepage of the system.
+    Main Course:
+        1. User is in the log in page of the system.
+        2. User enters their username and password.
+        3. User clicks “log in” button.
+        Exceptions:
+            3a. If either or both of username and password are missing,
+                Display error message saying that user must fill up all required
+                fields.
+                Re-enter value.
+            3b. If username and password did not match,
+                Display error message stating username and password did not
+                match.
+                Re-enter value.
+        4. After entering correct username and password, the user is redirected to
+        homepage of the system.
+        
+    6.2. Name: User Log out
+    Description: User logs out to the system and redirected to the log in page.
+    Actor: Admin, Auditor, Clerk
+    Pre-condition: User is logged in to the system.
+    Post-condition: User is logged out to the system.
+        Main Course:
+        1. The user is on the system page.
+        2. User clicks “log out” button.
+        3. User is logged out to the system and s redirected to log-in page of the
+        system.
+        
+    6.3. Name: Add Personnel
+    Description: Admin assigns personnel(auditor and clerk) to the system.
+    Actor: Admin
+    Pre-condition: Admin is logged in to the system.
+    Post-condition: Admin successfully added personnel to be assigned to the system.
+    Main Course:
+        1. Admin is in the homepage.
+        2. Admin clicks “addPersonnel” button.
+        3. Admin fills in “personnel information” table.
+        4. Admin clicks on “add” button.
+        Exceptions:
+            4.a. If admin misses one or more of the required information,
+                  Display error message.
+                  Re-enter value.
+            4.a. If admin enters invalid information,
+                  Display error message.
+                  Re-enter value.
+        5. Personnel added is recorded in the system.
+        
+    6.4. Name: Remove Personnel
+    Description: Admin removes personnel(auditor and clerk) to the system.
+    Actor: Admin
+    Pre-condition: Admin is logged in to the system.
+    Post-condition: Admin successfully removed personnel to the system.
+    Main Course:
+        1. Admin is in the homepage.
+        2. Admin enters the personnel’s name to be deleted.
+        3. Admin clicks “delete personnel” button.
+        4. Personnel’s record is deleted in the system.
+        
+    6.5. Name: View Transaction
+    Description: User views transactions in the system.
+    Actor: Admin, Auditor and Clerk
+    Pre-condition: User is logged in to the system.
+    Post-condition: User can view transactions made in the system.
+    Main Course:
+        1. User is in the homepage.
+        2. User click on “view transaction” button.
+        3. The system will display all transactions made by the system.
+        
+    6.6. Name: View Report
+    Description: Admin or Auditor views the report (summary of all transactions)
+    Actor: Admin or Auditor
+    Pre-condition: User is logged in to the system.
+    Post-condition: User can view the report.
+    Main Course:
+        1. User is in the homepage.
+        2. User clicks on “view report” button.
+        3. The system will display the report generated by the system.
+        
+    6.7. Name: Create Transaction
+    Description: Clerk creates a transaction.
+    Actor: Clerk
+    Pre-condition: Clerk is logged in the system.
+    Post-condition: Clerk is in the Transaction Page.
+    Main Course:
+        1. Clerk is in the homepage
+        2. Clerk clicks the “create transaction” button.
+        
+    6.8 Name: Add transaction item
+    Description: Clerk adds a transaction item to the newly created transaction.
+    Actor: Clerk
+    Pre-condition: Clerk is logged in the system .
+    Post-condition: Clerk successfully added a transaction item
+    Main Course:
+        1. Clerk is in the Transaction Page.
+        2. Clerk clicks the “add item” button.
+        3. Clerk enters the item id and quantity.
+        Exceptions:
+            3a. If the item id is invalid.
+                Display error message.
+                Re-enter value.
+                
+    6.9 Name: Remove Transaction Item
+    Description: Clerk removes transaction.
+    Actor: Clerk
+    Pre-condition: Clerk is logged in to the system.
+    Post-condition: Clerk successfully removed a transaction item.
+    Main Course:
+        1. Clerk is in the Transaction Page
+        2. Clerks selected the item to be removed.
+        3. Clerk clicks “remove item” button.
+        
+    7.0 Name: Edit Transaction Item Quantity
+    Description: Clerk changes quantity of a transaction item.
+    Actor: Clerk
+    Pre-condition: Clerk is logged in to the system.
+    Post-condition: Clerk successfully changed quantity of transaction item.
+    Main Course:
+        1. Clerk is in the Transaction Page
+        2. Clerks selected the item to be edited
+        3. Clerk clicks “edit item” button.
+        4. Clerk inputs new quantity.
+        
+    6.7. Name: Submit Transaction
+    Description: Clerk submits a transaction.
+    Actor: Clerk
+    Pre-condition: Clerk is logged in the system.
+    Post-condition: Transaction is finalized and is submitted to the system
+    Main Course:
+        1. Clerk is in the Transaction Page
+        2. Clerk clicks the “submit transaction” button.
