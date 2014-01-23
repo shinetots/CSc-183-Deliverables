@@ -190,8 +190,6 @@ o	Repeat step 2.
 4.The system will show the list of updated items in the store.
 
 
-
-
 7.	User Stories and Story Acceptance Criteria
 7.1.	As a user who already has an account, I want to log-in so that I will be able to track and      perform my tasks. 
 •	User is redirected to  home page with log-out option when username and password entered are valid.
